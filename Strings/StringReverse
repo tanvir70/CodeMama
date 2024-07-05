@@ -1,0 +1,17 @@
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+     Scanner scan = new Scanner(System.in);
+    
+     String s = scan.nextLine();
+
+     String reversed = new StringBuilder(s).reverse().toString();
+
+     System.out.println(reversed);
+        
+    }
+}
+
+// Time Complexity : O(n)
+// Space Complexity : O(n)
