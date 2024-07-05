@@ -1,0 +1,17 @@
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        
+        // Read the input strings A and B
+        String A = scan.next();
+        String B = scan.next();
+        
+        // Concatenate B and A
+        String result = B + A;
+        
+        // Print the resulting string
+        System.out.println(result);
+    }
+}
