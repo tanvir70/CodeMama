@@ -1,0 +1,29 @@
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        
+        Scanner scan = new Scanner(System.in);
+        String s = scan.nextLine();
+
+        char[] str = s.toCharArray();
+        
+        for( int i = 0; i < str.length; i++){
+            
+            if ( i % 2 == 0){
+               str[i] = Character.toLowerCase(str[i]);
+            }else {
+                 str[i] = Character.toUpperCase(str[i]);
+            }
+
+        }
+
+        String newS =  new String(str);
+
+        if (newS.equals(s)){
+            System.out.print("Yes");
+        }else{
+            System.out.print("No");
+        }
+    }
+}
